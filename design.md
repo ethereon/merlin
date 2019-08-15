@@ -72,7 +72,7 @@ Desirables:
 -   Composable and inheritable
 -   Suitable for serialization/deserialization to/from JSON
 
-Python 3's `dataclasses` meet many of these requirements (and, consequently, forms the core of the `Spec` class) but fall short on some fronts. In particular:
+Python 3.7's [dataclasses](https://docs.python.org/3/library/dataclasses.html) meet many of these requirements (and, consequently, forms the core of the `Spec` class) but fall short on some fronts. In particular:
 
 -   Subclasses inheriting from dataclass decorated parents must be explicitly decorated again. (`Spec` addresses this by auto-transforming subclasses to dataclasses.)
 
